@@ -1,20 +1,24 @@
 ## 1. Selesaikan Praktikum 1 sampai 5, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md!
 
 # Praktikum 1
+
 ## Langkah 1
 
 Buka VS Code, lalu tekan tombol Ctrl + Shift + P maka akan tampil Command Palette, lalu ketik Flutter. Pilih New Application Project. <br>
 ![alt text](images/Praktikum1_01.png)
 
 ## Langkah 2
+
 Kemudian buat folder sesuai style laporan praktikum yang Anda pilih. Disarankan pada folder dokumen atau desktop atau alamat folder lain yang tidak terlalu dalam atau panjang. Lalu pilih Select a folder to create the project in.<br>
 ![alt text](images/Praktikum1_02.png)
 
 ## Langkah 3
+
 Buat nama project flutter hello_world seperti berikut, lalu tekan Enter. Tunggu hingga proses pembuatan project baru selesai.<br>
 ![alt text](images/Praktikum1_03.png)
 
 ## Langkah 4:
+
 Jika sudah selesai proses pembuatan project baru, pastikan tampilan seperti berikut. Pesan akan tampil berupa "Your Flutter Project is ready!" artinya Anda telah berhasil membuat project Flutter baru.<br>
 ![alt text](images/Praktikum1_04.png)
 
@@ -23,53 +27,64 @@ Jika sudah selesai proses pembuatan project baru, pastikan tampilan seperti beri
 # Praktikum 3 - Membuat Repository GitHub dan Laporan Praktikum
 
 ## Langkah 1
+
 Login ke akun GitHub Anda, lalu buat repository baru dengan nama "flutter-fundamental-part1" <br>
 ![alt text](images/Praktikum2_01.png)
 
 ## Langkah 2
+
 Lalu klik tombol "Create repository" lalu akan tampil seperti gambar berikut. <br>
 ![alt text](images/Praktikum2_02.png)
 
 ## Langkah 3
+
 Kembali ke VS code, project flutter hello_world, buka terminal pada menu Terminal > New Terminal. Lalu ketik perintah berikut untuk inisialisasi git pada project Anda. <br>
 ![alt text](images/Praktikum2_03.png)
 
 ## Langkah 4
+
 Pilih menu Source Control di bagian kiri, lalu lakukan stages (+) pada file .gitignore untuk mengunggah file pertama ke repository GitHub. <br>
 ![alt text](images/Praktikum2_04.png)
 
 ## Langkah 5
+
 Beri pesan commit "tambah gitignore" lalu klik Commit (✔) <br>
 ![alt text](images/Praktikum2_05.png)
 
 ## Langkah 6
+
 Lakukan push dengan klik bagian menu titik tiga > Push<br>
 ![alt text](images/Praktikum2_06.png)
 
 ## Langkah 7
+
 Di pojok kanan bawah akan tampil seperti gambar berikut. Klik "Add Remote" <br>
 ![alt text](images/Praktikum2_07.png)
 
 ## Langkah 8:
+
 Salin tautan repository Anda dari browser ke bagian ini, lalu klik Add remote <br>
 ![alt text](images/Praktikum2_08.png) <br>
 Setelah berhasil, tulis remote name dengan "origin" <br>
-![alt text](images/Praktikum2_09.png) 
+![alt text](images/Praktikum2_09.png)
 
 ## Langkah 9
 
 Lakukan hal yang sama pada file README.md mulai dari Langkah 4. Setelah berhasil melakukan push, masukkan username GitHub Anda dan password berupa token yang telah dibuat (pengganti password konvensional ketika Anda login di browser GitHub). Reload halaman repository GitHub Anda, maka akan tampil hasil push kedua file tersebut seperti gambar berikut.
 
 ## Langkah 10
+
 Lakukan push juga untuk semua file lainnya dengan pilih Stage All Changes. Beri pesan commit "project hello_world". Maka akan tampil di repository GitHub Anda seperti berikut. <br>
 ![alt text](images/Praktikum2_10.png)
 
 ## Langkah 11
+
 Kembali ke VS Code, ubah platform di pojok kanan bawah ke emulator atau device atau bisa juga menggunakan browser Chrome. Lalu coba running project hello_world dengan tekan F5 atau Run > Start Debugging. Tunggu proses kompilasi hingga selesai, maka aplikasi flutter pertama Anda akan tampil seperti berikut. <br>
 ![alt text](images/Praktikum2_11
 .png)
 
 ## Langkah 12
+
 Silakan screenshot seperti pada Langkah 11, namun teks yang ditampilkan dalam aplikasi berupa nama lengkap Anda. Simpan file screenshot dengan nama 01.png pada folder images (buat folder baru jika belum ada) di project hello_world Anda. Lalu ubah isi README.md seperti berikut, sehingga tampil hasil screenshot pada file README.md. Kemudian push ke repository Anda. <br>
 ![alt text](images/01.png)
 
@@ -79,7 +94,7 @@ Silakan screenshot seperti pada Langkah 11, namun teks yang ditampilkan dalam ap
 
 Buat folder baru basic_widgets di dalam folder lib. Kemudian buat file baru di dalam basic_widgets dengan nama text_widget.dart. Ketik atau salin kode program berikut ke project hello_world Anda pada file text_widget.dart.
 
-``` import 'package:flutter/material.dart';
+```import 'package:flutter/material.dart';
 
 class MyTextWidget extends StatelessWidget {
   const MyTextWidget({Key? key}) : super(key: key);
@@ -93,14 +108,16 @@ class MyTextWidget extends StatelessWidget {
   }
 }
 ```
+
 ![alt text](images/Praktikum4_01.png) <br>
 Lakukan import file text_widget.dart ke main.dart, lalu ganti bagian text widget dengan kode di atas. Maka hasilnya seperti gambar berikut. Screenshot hasil milik Anda, lalu dibuat laporan pada file README.md. <br>
 ![alt text](images/Praktikum4_02.png)
 
 # Langkah 2: Image Widget
+
 Buat sebuah file image_widget.dart di dalam folder basic_widgets dengan isi kode berikut.
 
-``` import 'package:flutter/material.dart';
+```import 'package:flutter/material.dart';
 
 class MyImageWidget extends StatelessWidget {
   const MyImageWidget({Key? key}) : super(key: key);
@@ -113,19 +130,23 @@ class MyImageWidget extends StatelessWidget {
   }
 }
 ```
+
 Lakukan penyesuaian asset pada file pubspec.yaml dan tambahkan file logo Anda di folder assets project hello_world.
-``` assets:
+
+```assets:
      - images/logo_polinema.png
 ```
+
 Jangan lupa sesuaikan kode dan import di file main.dart kemudian akan tampil gambar seperti berikut. <br>
 ![alt text](images/Praktikum4_03.png)
 
 # Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino
 
 ## Langkah 1: Cupertino Button dan Loading Bar
+
 Buat file di basic_widgets > loading_cupertino.dart. Import stateless widget dari material dan cupertino. Lalu isi kode di dalam method Widget build adalah sebagai berikut.
 
-``` return MaterialApp(
+```return MaterialApp(
       home: Container(
         margin: const EdgeInsets.only(top: 30),
         color: Colors.white,
@@ -141,6 +162,7 @@ Buat file di basic_widgets > loading_cupertino.dart. Import stateless widget dar
       ),
     );
 ```
+
 ![alt text](images/Praktikum5_01.png)
 
 ## Langkah 2: Floating Action Button (FAB)
@@ -149,7 +171,7 @@ Button widget terdapat beberapa macam pada flutter yaitu ButtonBar, DropdownButt
 
 Buat file di basic_widgets > fab_widget.dart. Import stateless widget dari material. Lalu isi kode di dalam method Widget build adalah sebagai berikut.
 
-``` return MaterialApp(
+```return MaterialApp(
       home: Scaffold(
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -161,6 +183,7 @@ Buat file di basic_widgets > fab_widget.dart. Import stateless widget dari mater
       ),
     );
 ```
+
 ![alt text](images/Praktikum5_02.png)
 
 ## Langkah 3: Scaffold Widget
@@ -168,7 +191,8 @@ Buat file di basic_widgets > fab_widget.dart. Import stateless widget dari mater
 Scaffold widget digunakan untuk mengatur tata letak sesuai dengan material design. <br>
 
 Ubah isi kode main.dart seperti berikut.
-``` import 'package:flutter/material.dart';
+
+```import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -237,12 +261,13 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment Counter',
         child: const Icon(Icons.add),
-      ), 
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
 ```
+
 ![alt text](images/Praktikum5_03.png)
 
 ## Langkah 4: Dialog Widget
@@ -250,7 +275,8 @@ class _MyHomePageState extends State<MyHomePage> {
 Dialog widget pada flutter memiliki dua jenis dialog yaitu AlertDialog dan SimpleDialog. <br>
 
 Ubah isi kode main.dart seperti berikut.
-``` class MyApp extends StatelessWidget {
+
+```class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
@@ -305,14 +331,15 @@ showAlertDialog(BuildContext context) {
       return alert;
     },
   );
-  ```
-  ![alt text](images/Praktikum5_04.png)
+```
+
+![alt text](images/Praktikum5_04.png)
 
 ## Langkah 6: Date and Time Pickers
 
-Date and Time Pickers termasuk pada kategori input dan selection widget, berikut adalah contoh penggunaan Date and Time Pickers. 
+Date and Time Pickers termasuk pada kategori input dan selection widget, berikut adalah contoh penggunaan Date and Time Pickers.
 
-``` import 'dart:async';
+```import 'dart:async';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -386,15 +413,18 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
 ![alt text](images/Praktikum5_05.png) <br>
 ![alt text](images/Praktikum5_06.png)
 
 ## 2. Selesaikan Praktikum 2 dan Anda wajib menjalankan aplikasi hello_world pada perangkat fisik (device Android/iOS) agar Anda mempunyai pengalaman untuk menghubungkan ke perangkat fisik. Capture hasil aplikasi di perangkat, lalu buatlah laporan praktikum pada file README.md.
 
 ## 3. Pada praktikum 5 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri di folder basic_widgets, kemudian pada file main.dart cukup melakukan import widget sesuai masing-masing langkah tersebut!
-Hasil sudah di tampilkan di bagian 1 
+
+Hasil sudah di tampilkan di bagian 1
 
 ## 4. Selesaikan Codelabs: Your first Flutter app, lalu buatlah laporan praktikumnya dan push ke repository GitHub Anda!
+
 Berikutnya, pilih Application lalu folder tempat proyek akan dibuat. Folder ini dapat berupa direktori utama Anda, atau direktori seperti C:\src\.
 
 Terakhir, beri nama proyek Anda. Beri nama seperti namer_app atau my_awesome_namer. <br>
@@ -403,8 +433,9 @@ Terakhir, beri nama proyek Anda. Beri nama seperti namer_app atau my_awesome_nam
 ## Menyalin & Menempelkan aplikasi awal
 
 Pada panel sebelah kiri VS Code, pastikan bahwa Penjelajah dipilih lalu buka file pubspec.yaml. <br>
-Ganti konten file ini dengan kode berikut: 
-``` name: namer_app
+Ganti konten file ini dengan kode berikut:
+
+```name: namer_app
 description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -430,6 +461,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 ```
+
 ![alt text](images/Tugas4_02.png) <br>
 File pubspec.yaml menentukan informasi dasar tentang aplikasi Anda, seperti versi aplikasi saat ini, dependensi aplikasi, dan aset yang digunakan oleh aplikasi untuk pengiriman. <br>
 
@@ -442,6 +474,7 @@ Terakhir, buka file main.dart pada direktori lib/. <br>
 ![alt text](images/Tugas4_04.png) <br>
 
 # Menambahkan Tombol
+
 ## Meluncurkan aplikasi
 
 Pertama, buka lib/main.dart dan pastikan Anda memilih perangkat target. Di bagian pojok kanan bawah VS Code, Anda akan menemukan tombol yang menampilkan perangkat target saat ini. Klik tombol untuk mengubahnya. <br>
@@ -454,7 +487,8 @@ Setelah beberapa saat, aplikasi Anda diluncurkan dalam mode debug. Tampilannya m
 ## Hot Reload Pertama
 
 Di bagian bawah lib/main.dart, tambahkan sesuatu pada string di objek Text pertama, dan simpan file tersebut (dengan Ctrl+S atau Cmd+S). Misalnya:
-``` // ...
+
+```// ...
 
     return Scaffold(
       body: Column(
@@ -468,13 +502,15 @@ Di bagian bawah lib/main.dart, tambahkan sesuatu pada string di objek Text perta
 // ...
 
 ```
+
 Perhatikan bagaimana aplikasi segera berubah tetapi kata yang acak tetap sama. Situasi ini menunjukkan fitur stateful Hot Reload Flutter terkenal yang sedang bekerja. Hot reload dipicu saat Anda menyimpan perubahan untuk file sumber. <br>
 ![alt text](images/Tugas4_05.png) <br>
 
 ## Menambahkan tombol
 
 Berikutnya, tambahkan tombol di bagian bawah Column, tepat di bawah instance Text kedua.
-``` // ...
+
+```// ...
 
     return Scaffold(
       body: Column(
@@ -496,13 +532,15 @@ Berikutnya, tambahkan tombol di bagian bawah Column, tepat di bawah instance Tex
 
 // ...
 ```
+
 Saat Anda menyimpan perubahan, aplikasi diperbarui kembali: Sebuah tombol muncul dan, saat Anda mengklik tombol tersebut, Konsol Debug di VS Code menampilkan pesan button pressed!. <br>
 ![alt text](images/Tugas4_07.png) <br>
 
 ## Perilaku pertama Anda
 
 Scroll ke MyAppState lalu tambahkan metode getNext.
-``` // ...
+
+```// ...
 
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
@@ -516,11 +554,13 @@ class MyAppState extends ChangeNotifier {
 
 // ...
 ```
+
 ![alt text](images/Tugas4_08.png) <br>
 Metode getNext() baru menetapkan ulang current dengan WordPair acak baru. Metode ini juga memanggil notifyListeners()(metode ChangeNotifier) yang memastikan bahwa semua orang yang melihat MyAppState diberi tahu. <br>
 
 Tindakan terakhir adalah memanggil metode getNext dari callback tombol tersebut. <br>
-``` // ...
+
+```// ...
 
     ElevatedButton(
       onPressed: () {
@@ -531,6 +571,7 @@ Tindakan terakhir adalah memanggil metode getNext dari callback tombol tersebut.
 
 // ...
 ```
+
 ![alt text](images/Tugas4_09.png) <br>
 
 # Memperindah Tampilan Aplikasi
@@ -542,7 +583,8 @@ Baris yang bertanggung jawab untuk menampilkan pasangan kata saat ini kini tampa
 Flutter menyediakan pembantu pemfaktoran ulang untuk mengekstrak widget, tetapi sebelum Anda menggunakannya, pastikan bahwa baris yang akan diekstrak hanya mengakses yang diperlukan. Sekarang baris tersebut mengakses appState, tetapi sebenarnya baris tersebut hanya perlu mengetahui apa pasangan kata saat ini. <br>
 
 Oleh karena itu, tulis ulang widget MyHomePage sebagai berikut: <br>
-``` // ...
+
+```// ...
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -569,13 +611,14 @@ class MyHomePage extends StatelessWidget {
 
 // ...
 ```
+
 ![alt text](images/Tugas4_09.png) <br>
 
 Bagus. Widget Text tidak lagi merujuk kepada keseluruhan appState. <br>
 
 Sekarang, panggil menu Refactor. Pada VS Code, Anda melakukan ini melalui salah satu dari dua cara:<br>
 
-    Klik kanan potongan kode yang ingin Anda faktorkan ulang (dalam hal ini Text) dan pilih Refactor... dari menu drop-down, 
+    Klik kanan potongan kode yang ingin Anda faktorkan ulang (dalam hal ini Text) dan pilih Refactor... dari menu drop-down,
 
 ATAU <br>
 
@@ -611,7 +654,7 @@ Anda dapat mengubah warna ini serta skema warna keseluruhan aplikasi dengan men-
 
 Kartu tersebut masih memiliki masalah: ukuran teks terlalu kecil dan warnanya membuat teks sulit dibaca. Untuk memperbaiki masalah ini, buat perubahan berikut pada metode build() BigCard. <br>
 
-``` // ...
+```// ...
 
   @override
   Widget build(BuildContext context) {
@@ -633,6 +676,7 @@ Kartu tersebut masih memiliki masalah: ukuran teks terlalu kecil dan warnanya me
 
 // ...
 ```
+
 ![alt text](images/Tugas4_14.png) <br>
 
 Meningkatkan aksesibilitas <br>
@@ -652,7 +696,8 @@ Namun, Anda mungkin ingin mempertahankan kesederhanaan visual pair.asLowerCase. 
 Setelah pasangan kata acak dihadirkan dengan gaya visual yang cukup, saatnya menempatkan UI di tengah jendela/layar aplikasi. <br>
 
 Pertama, ingatlah bahwa BigCard adalah bagian dari Column. Secara default, kolom menggabungkan turunan kolom di bagian atas, tetapi kita dapat mengganti ini dengan mudah. Buka metode build() MyHomePage, dan buat perubahan berikut:
-``` // ...
+
+```// ...
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -680,6 +725,7 @@ class MyHomePage extends StatelessWidget {
 
 // ...
 ```
+
 Tindakan ini menempatkan turunan dalam Column di tengah pada sumbu utamanya (vertikal). <br>
 Turunan UI telah ditempatkan di tengah pada sumbu silang kolom (dengan kata lain, turunan UI telah ditempatkan di tengah secara horizontal). Namun, Column itu sendiri tidak ditempatkan di tengah dalam Scaffold. Kita dapat memverifikasi ini menggunakan Widget Inspector. <br>
 
@@ -690,7 +736,8 @@ Anda dapat menempatkan kolom itu sendiri di tengah. Letakkan kursor Anda di Colu
 ![alt text](images/Tugas4_15.png) <br>
 
 Dengan perubahan opsional, MyHomePage mencakup kode berikut: <br>
-``` // ...
+
+```// ...
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -719,10 +766,12 @@ class MyHomePage extends StatelessWidget {
 }
 
 // ...
-``` 
+```
+
 ![alt text](images/Tugas4_15.png) <br>
 
 # Menambahkan fungsi
+
 Aplikasi berjalan dengan baik, dan bahkan terkadang menyediakan pasangan kata yang menarik. Namun, setiap kali pengguna mengklik Next, setiap pasangan kata hilang selamanya. Akan lebih baik untuk memiliki cara "mengingat" saran terbaik: seperti tombol 'Like'. <br>
 
 ## Menambahkan logika bisnis
@@ -739,7 +788,8 @@ Pertama, gabungkan tombol yang ada pada Row. Buka metode build() MyHomePage, let
 Saat menyimpan, Anda akan menyadari bahwa Row bertindak mirip dengan Column—secara default, kode ini mengumpulkan turunannya ke sebelah kiri. (Column mengumpulkan turunannya ke atas.) Untuk memperbaiki masalah ini, Anda dapat menggunakan pendekatan yang sama seperti sebelumnya, tetapi dengan mainAxisAlignment. Namun, untuk tujuan mendidik (pembelajaran), gunakan mainAxisSize. Kode ini memberi tahu Row agar tidak mengambil semua ruang horizontal yang tersedia. <br>
 
 Buat perubahan berikut:
-``` // ...
+
+```// ...
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -774,3 +824,258 @@ class MyHomePage extends StatelessWidget {
 
 // ...
 ```
+
+# Menambahkan kolom samping navigasi
+
+Sebagian besar aplikasi tidak dapat memuat semuanya ke dalam satu layar. Aplikasi ini mungkin dapat melakukannya, tetapi untuk tujuan pembelajaran, Anda akan membuat layar terpisah untuk bagian favorit pengguna. Untuk beralih di antara dua layar, Anda akan menerapkan StatefulWidget pertama Anda.
+
+Untuk mencapai inti dari langkah ini secepat mungkin, pisahkan MyHomePage menjadi 2 widget terpisah.
+
+Pilih keseluruhan MyHomePage, hapus, dan gantikan dengan kode berikut:
+
+```// ...
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Row(
+        children: [
+          SafeArea(
+            child: NavigationRail(
+              extended: false,
+              destinations: [
+                NavigationRailDestination(
+                  icon: Icon(Icons.home),
+                  label: Text('Home'),
+                ),
+                NavigationRailDestination(
+                  icon: Icon(Icons.favorite),
+                  label: Text('Favorites'),
+                ),
+              ],
+              selectedIndex: 0,
+              onDestinationSelected: (value) {
+                print('selected: $value');
+              },
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: Theme.of(context).colorScheme.primaryContainer,
+              child: GeneratorPage(),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class GeneratorPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var appState = context.watch<MyAppState>();
+    var pair = appState.current;
+
+    IconData icon;
+    if (appState.favorites.contains(pair)) {
+      icon = Icons.favorite;
+    } else {
+      icon = Icons.favorite_border;
+    }
+
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          BigCard(pair: pair),
+          SizedBox(height: 10),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ElevatedButton.icon(
+                onPressed: () {
+                  appState.toggleFavorite();
+                },
+                icon: Icon(icon),
+                label: Text('Like'),
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                onPressed: () {
+                  appState.getNext();
+                },
+                child: Text('Next'),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ...
+```
+
+Hasil ketika dijalankan adalah sebagai berikut <br>
+![alt text](images/Tugas4_17.png)
+
+# setState
+
+Widget stateful baru hanya perlu melacak satu variabel: selectedIndex. Buat 3 perubahan berikut untuk \_MyHomePageState:
+
+```
+// ...
+
+class _MyHomePageState extends State<MyHomePage> {
+
+  var selectedIndex = 0;     // ← Add this property.
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Row(
+        children: [
+          SafeArea(
+            child: NavigationRail(
+              extended: false,
+              destinations: [
+                NavigationRailDestination(
+                  icon: Icon(Icons.home),
+                  label: Text('Home'),
+                ),
+                NavigationRailDestination(
+                  icon: Icon(Icons.favorite),
+                  label: Text('Favorites'),
+                ),
+              ],
+              selectedIndex: selectedIndex,    // ← Change to this.
+              onDestinationSelected: (value) {
+
+                // ↓ Replace print with this.
+                setState(() {
+                  selectedIndex = value;
+                });
+
+              },
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: Theme.of(context).colorScheme.primaryContainer,
+              child: GeneratorPage(),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ...
+```
+
+Hasil ketika dijalankana dalah sebagai berikut
+![alt text](images/Tugas4_18.png) <br>
+
+# Menggunakan selectedIndex
+
+Tempatkan kode berikut di bagian atas metode build \_MyHomePageState, tepat sebelum return Scaffold:
+
+```
+// ...
+
+Widget page;
+switch (selectedIndex) {
+  case 0:
+    page = GeneratorPage();
+    break;
+  case 1:
+    page = Placeholder();
+    break;
+  default:
+    throw UnimplementedError('no widget for $selectedIndex');
+}
+
+// ...
+```
+
+![alt text](images/Tugas4_19.png)
+
+# Tingkat respons
+
+Berikutnya, buat kolom samping navigasi menjadi responsif. Dengan kata lain, buat agar kolom samping navigasi menampilkan label secara otomatis (menggunakan extended: true) saat ada ruang yang cukup.
+
+```
+// ...
+
+class _MyHomePageState extends State<MyHomePage> {
+  var selectedIndex = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    Widget page;
+    switch (selectedIndex) {
+      case 0:
+        page = GeneratorPage();
+        break;
+      case 1:
+        page = Placeholder();
+        break;
+      default:
+        throw UnimplementedError('no widget for $selectedIndex');
+    }
+
+    return LayoutBuilder(builder: (context, constraints) {
+      return Scaffold(
+        body: Row(
+          children: [
+            SafeArea(
+              child: NavigationRail(
+                extended: constraints.maxWidth >= 600,  // ← Here.
+                destinations: [
+                  NavigationRailDestination(
+                    icon: Icon(Icons.home),
+                    label: Text('Home'),
+                  ),
+                  NavigationRailDestination(
+                    icon: Icon(Icons.favorite),
+                    label: Text('Favorites'),
+                  ),
+                ],
+                selectedIndex: selectedIndex,
+                onDestinationSelected: (value) {
+                  setState(() {
+                    selectedIndex = value;
+                  });
+                },
+              ),
+            ),
+            Expanded(
+              child: Container(
+                color: Theme.of(context).colorScheme.primaryContainer,
+                child: page,
+              ),
+            ),
+          ],
+        ),
+      );
+    });
+  }
+}
+
+// ...
+```
+
+Hasil ketika dijalankan adalah sebagai berikut <br>
+![alt text](images/Tugas4_20.png)
+
+# Menambahkan halaman baru
+
+Berikut ini hanyalah salah satu cara untuk menerapkan halaman favorit. Bagaimana halaman ini diterapkan (semoga) akan menginspirasi Anda untuk bermain dengan kode—meningkatkan UI dan membuat UI sesuai keinginan Anda.
+
+Berikut class FavoritesPage baru:
+
+![alt text](images/Tugas4_21.png)
